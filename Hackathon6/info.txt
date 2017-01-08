@@ -1,6 +1,0 @@
-Team: Doge the coder
-Member:
-    - Nguyễn Thành Công
-    - Nguyễn Thị Hương
-    - Hà Văn Linh
-    - Nguyễn Đức Toàn

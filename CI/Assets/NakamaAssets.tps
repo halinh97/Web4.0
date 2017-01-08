@@ -4,9 +4,9 @@
         <key>fileFormatVersion</key>
         <int>4</int>
         <key>texturePackerVersion</key>
-        <string>4.2.3</string>
+        <string>4.3.1</string>
         <key>fileName</key>
-        <string>/Users/AVAVT/Documents/TechKids/Nakama/Assets/NakamaAssets.tps</string>
+        <string>D:/Web 4/Web4.0/CI/Assets/NakamaAssets.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -47,6 +47,8 @@
         <uint>32768</uint>
         <key>etc1CompressionQuality</key>
         <enum type="SettingsBase::Etc1CompressionQuality">ETC1_QUALITY_LOW_PERCEPTUAL</enum>
+        <key>etc2CompressionQuality</key>
+        <enum type="SettingsBase::Etc2CompressionQuality">ETC2_QUALITY_LOW_PERCEPTUAL</enum>
         <key>dxtCompressionMode</key>
         <enum type="SettingsBase::DxtCompressionMode">DXT_PERCEPTUAL</enum>
         <key>jxrColorFormat</key>
@@ -74,10 +76,12 @@
         <key>jpgQuality</key>
         <uint>80</uint>
         <key>pngOptimizationLevel</key>
-        <uint>0</uint>
+        <uint>1</uint>
         <key>webpQualityLevel</key>
         <uint>101</uint>
         <key>textureSubPath</key>
+        <string></string>
+        <key>atfFormats</key>
         <string></string>
         <key>textureFormat</key>
         <enum type="SettingsBase::TextureFormat">png</enum>
@@ -100,7 +104,7 @@
         <key>algorithmSettings</key>
         <struct type="AlgorithmSettings">
             <key>algorithm</key>
-            <enum type="AlgorithmSettings::AlgorithmId">Basic</enum>
+            <enum type="AlgorithmSettings::AlgorithmId">MaxRects</enum>
             <key>freeSizeMode</key>
             <enum type="AlgorithmSettings::AlgorithmFreeSizeMode">Best</enum>
             <key>sizeConstraints</key>
@@ -118,6 +122,11 @@
                 <enum type="AlgorithmBasicSettings::SortBy">Best</enum>
                 <key>order</key>
                 <enum type="AlgorithmBasicSettings::Order">Ascending</enum>
+            </struct>
+            <key>polygon</key>
+            <struct type="AlgorithmPolygonSettings">
+                <key>alignToGrid</key>
+                <uint>1</uint>
             </struct>
         </struct>
         <key>andEngine</key>
@@ -141,7 +150,7 @@
             <key>data</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>assets.json</filename>
+                <filename></filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -158,7 +167,7 @@
             <string></string>
         </struct>
         <key>autoAliasEnabled</key>
-        <false/>
+        <true/>
         <key>trimSpriteNames</key>
         <false/>
         <key>prependSmartFolderName</key>
@@ -170,13 +179,13 @@
             <key>scaleMode</key>
             <enum type="ScaleMode">Smooth</enum>
             <key>extrude</key>
-            <uint>0</uint>
+            <uint>1</uint>
             <key>trimThreshold</key>
             <uint>1</uint>
             <key>trimMargin</key>
             <uint>1</uint>
             <key>trimMode</key>
-            <enum type="SpriteSettings::TrimMode">None</enum>
+            <enum type="SpriteSettings::TrimMode">Trim</enum>
             <key>tracerTolerance</key>
             <int>200</int>
             <key>heuristicMask</key>
@@ -188,165 +197,65 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BossHealthBar.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BossHealthBarBG.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BossHealthBarMask.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BossType1.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BossType1Wings.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BottomArtwork.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BulletType1.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BulletType1Upgraded.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BulletType2.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BulletType2Propulsory.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BulletType2Upgraded.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BulletType3.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BulletType3Upgraded.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/CollectibleStar.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/EnemyBulletType1.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/EnemyBulletType2.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/EnemyBulletType3.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/EnemyBulletType3Origin.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/EnemyBulletType4.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/EnemyType1.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/EnemyType2.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/EnemyType3.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/EnemyType4.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/EnemyType4Base.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Explode.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/PlayerHealthBar.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/PlayerHealthBarBG.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/PlayerHealthBarMask.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-1-1.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-1-2.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-1-3.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-1-4.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2D-1.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2D-2.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2D-3.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2D-4.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2L-1.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2L-2.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2L-3.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2L-4.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2R-1.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2R-2.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2R-3.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2R-4.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3D-1.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3D-2.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3D-3.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3D-4.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3L-1.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3L-2.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3L-3.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3L-4.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3R-1.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3R-2.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3R-3.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3R-4.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Shield.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/ShipType3Support.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship1-Partner.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship1-Player.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship1Left-Partner.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship1Left-Player.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship1Right-Partner.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship1Right-Player.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship2-Partner.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship2-Player.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship2Left-Partner.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship2Left-Player.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship2Right-Partner.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship2Right-Player.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship3-Partner.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship3-Player.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship3Left-Partner.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship3Left-Player.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship3Right-Partner.png</key>
-            <key type="filename">../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship3Right-Player.png</key>
+            <key type="filename">C:/Users/Admin/Pictures/15369298_191487047978855_608688556846329866_o.jpg</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>421,512,841,1024</rect>
+                <key>scale9Paddings</key>
+                <rect>421,512,841,1024</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">C:/Users/Admin/Pictures/Game Boy Advance - Pokemon Mystery Dungeon Red Rescue Team - Status Effects.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>86,88,172,176</rect>
+                <key>scale9Paddings</key>
+                <rect>86,88,172,176</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">C:/Users/Admin/Pictures/uu.jpg</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>180,240,360,480</rect>
+                <key>scale9Paddings</key>
+                <rect>180,240,360,480</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">C:/Users/Admin/Pictures/vk yêu ck.jpg</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>240,164,480,328</rect>
+                <key>scale9Paddings</key>
+                <rect>240,164,480,328</rect>
+                <key>scale9FromFile</key>
+                <false/>
             </struct>
         </map>
         <key>fileList</key>
         <array>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BossHealthBar.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BossHealthBarBG.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BossHealthBarMask.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BossType1.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BossType1Wings.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BottomArtwork.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BulletType1.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BulletType1Upgraded.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BulletType2.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BulletType2Propulsory.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BulletType2Upgraded.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BulletType3.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/BulletType3Upgraded.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/CollectibleStar.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/EnemyBulletType1.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/EnemyBulletType2.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/EnemyBulletType3.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/EnemyBulletType3Origin.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/EnemyBulletType4.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/EnemyType1.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/EnemyType2.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/EnemyType3.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/EnemyType4.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/EnemyType4Base.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Explode.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/PlayerHealthBar.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/PlayerHealthBarBG.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/PlayerHealthBarMask.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-1-1.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-1-2.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-1-3.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-1-4.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2D-1.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2D-2.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2D-3.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2D-4.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2L-1.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2L-2.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2L-3.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2L-4.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2R-1.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2R-2.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2R-3.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-2R-4.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3D-1.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3D-2.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3D-3.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3D-4.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3L-1.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3L-2.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3L-3.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3L-4.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3R-1.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3R-2.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3R-3.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Propul-3R-4.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Shield.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/ShipType3Support.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship1-Partner.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship1-Player.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship1Left-Partner.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship1Left-Player.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship1Right-Partner.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship1Right-Player.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship2-Partner.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship2-Player.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship2Left-Partner.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship2Left-Player.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship2Right-Partner.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship2Right-Player.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship3-Partner.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship3-Player.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship3Left-Partner.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship3Left-Player.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship3Right-Partner.png</filename>
-            <filename>../../../Startwhy/nakama/Nakama/Resources/Images2x.atlas/Spaceship3Right-Player.png</filename>
+            <filename>C:/Users/Admin/Pictures/15369298_191487047978855_608688556846329866_o.jpg</filename>
+            <filename>C:/Users/Admin/Pictures/Game Boy Advance - Pokemon Mystery Dungeon Red Rescue Team - Status Effects.png</filename>
+            <filename>C:/Users/Admin/Pictures/uu.jpg</filename>
+            <filename>C:/Users/Admin/Pictures/vk yêu ck.jpg</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
@@ -368,5 +277,7 @@
         <string></string>
         <key>normalMapSheetFileName</key>
         <filename></filename>
+        <key>exporterProperties</key>
+        <map type="ExporterProperties"/>
     </struct>
 </data>
