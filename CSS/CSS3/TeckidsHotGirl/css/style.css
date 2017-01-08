@@ -1,63 +1,62 @@
-body {
-    background-color: #DFDFDF;
+body{
+  background-color: #DFDFDF;
 }
 
-.header {
-    padding: 16px 0 13px;
-    background-color: #FFFFFF;
+.header{
+  padding: 15px 0 10px;
+  background: #ffffff;
 }
 
-.search_form input[type="text"]{
-    border-radius: 0;
-    padding-right: 30px;
+.search_form input[type=text]{
+  border-radius: 0;
+  padding-right: 23px;
 }
 
-.search_form .glyphicon-search {
-    position: absolute;
-    right: 30px;
-    top: 50%;
-    transform: translate(0,-50%);
-    color: #CECECE;
+.search_form .glyphicon-search{
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #cecece;
 }
 
-.site_logo {
-    font-size: 24px;
-    line-height: 30px;
-    color: #00A0C6;
-    font-weight: 100;
+.site_logo{
+  font-size: 22px;
+  line-height: 34px;
+  color: #00A0C6;
+  font-weight: 100;
 }
 
 .site_logo img{
-    height: 34px;
+  max-height: 34px;
 }
 
-.profile_wrapper {
-    border: 1px solid #CECECE;
-    line-height: 34px;
+.profile_wrapper{
+  border: 1px solid #cecece;
+  line-height: 34px;
 }
 
-.profile_wrapper button {
-    float: left;
-    font-size: 18px;
-    display: inline-block;
-    width: 34px;
-    height: 34px;
-    color: #CECECE;
-    line-height: 34px;
-    text-align: center;
-    border: 0 none;
-    background: #ffffff;
-    border-right: 1px solid #cecece;
+.profile_wrapper button{
+  float: left;
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  font-size: 18px;
+  text-align: center;
+  color: #cecece;
+  border: 0 none;
+  background: #ffffff;
+  border-right: 1px solid #cecece;
 }
 
-.profile_wrapper button:hover {
-    color: #FFFFFF;
-    background: #00A0C6;
+.profile_wrapper button:hover{
+  color: #ffffff;
+  background: #00A0C6;
 }
 
-.username {
-    padding-left: 15px;
-    color: #CECECE;
+.username{
+  padding-left: 15px;
+  color: #cecece;
 }
 
 .item_container{
@@ -126,4 +125,58 @@ body {
   left: 0;
   right: 0;
   color: #ffffff;
+}
+
+.modal-content{
+  width: 80%;
+  line-height: 30px;
+  margin-top: 20px;
+
+}
+
+.plus_button_modal{
+  height: 100%;
+  top: 15px;
+  left: 15px;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  text-align: center;
+  border: 0 none;
+  background-color: #ffffff;
+}
+
+.plus_button_modal:hover{
+  background-color: #dedede;
+  color: #ffffff;
+}
+
+.modal_image_container img{
+  padding: 0 15px;
+  width: 100%;
+}
+
+.author_info img{
+  width: 100px;
+  height: 100px;
+  margin: 15px 15px 0 15px;
+  border-radius: 100%;
+}
+
+.text-muted{
+  margin-left: 20px;
+}
+
+.user_avatar img{
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  margin-left: 20px;
+}
+.img_statistics_container_modal{
+  float: right;
+  margin: 10px 0 0 0;
+  display: inline-block;
 }
