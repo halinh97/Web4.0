@@ -45,7 +45,7 @@ $(document).ready(function(){
       $('.page_loading').show();
       setTimeout(function(){
         requestNextPage(itemTemplate);
-      }, 1000);
+      }, 800);
       isRequestNextPage = true;
     }
   });
@@ -73,6 +73,6 @@ function requestNextPage(itemTemplate){
     console.log(error);
   }).always(function(){
     isRequestingNextPage = false;
-    $('.page_loading').hide();
+
   });
 }
