@@ -1,0 +1,170 @@
+body{
+  background:#dedede;
+}
+.header{
+  background: #ffffff;
+}
+.menu-container{
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: auto;
+}
+
+.menu-container span{
+  color: #402E2A;
+  display: inline-block;
+  height: auto;
+  width: 100px;
+  line-height: 30px;
+  position: relative;
+  padding: 10px auto;
+  font-weight: bold;
+}
+
+.menu-container .site_logo img{
+  width: 20%;
+  background: transparent;
+  text-align: center;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: red;
+	transform: scale(1.4);
+}
+
+.video-container{
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow:hidden;
+  z-index: -100;
+
+}
+.video-info{
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+
+
+
+}
+
+.navbar-toggle .icon-bar{
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #ffffff;
+}
+
+.navbar-toggle .icon-bar   .icon-bar{
+  margin-top: 4px;
+}
+
+
+/*span a:hover{
+  color: #FFD400;
+  cursor: pointer;
+  font-size: 100px;
+}*/
+.navbar-default .navbar-nav>li>a:hover {
+	color: red;
+	transform: scale(1.4);
+}
+
+
+.navbar-default  {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	border: none;
+	background: rgba(0, 0, 0, 0.3);
+}
+.navbar-default .navbar-nav>li>a {
+	color: #ffffff;
+}
+
+/*.row .img_buy{
+  width: 50%;
+  position: absolute;
+  float: right;
+}
+.img_buy img{
+  width: 80%;
+  height: 80%;
+
+float: right;
+}
+.img_container{
+position: relative;
+top: 0;
+left: 0;
+min-width: 100%;
+min-height: 100%;
+}
+.img_girl1{
+  float: left;
+  margin-right: 50px;
+  width: 50%;
+  border-radius: 20px 0 20px 20px;
+  position: relative;
+}
+h3 {
+    font-weight: 400;
+
+}
+h3 {
+    font-size: 36px;
+    line-height: 38px;
+  color:  #ffda4b;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+h2{
+  margin-bottom: 15px;
+}
+.phone {
+
+    font-size: 48px;
+    line-height: 48px;
+    color: #ffda4b;
+
+background-color:
+}
+p {
+    margin: 0 0 15px 0;
+}
+.img_container{
+  background-image: url(http://2.bp.blogspot.com/-MQj8WZsvPkk/URzez_J09cI/AAAAAAAABGg/AGjF6zYGri0/s1600/anh-tran-tri-blogger-blogspot_anh-dong-nen-blog_Namkna-blogspot-com_42.gif);
+
+}
+.img_buy{
+
+  width: 30%;
+  float: right;
+
+}
+.text h2{
+  position: absolute;
+}*/
+.img_container{
+  background: red;
+  font-size: 5000px;
+  position: relative;
+}
+.row .img_form{
+  background: #ffffff;
+  float: left;
+  width: 48%;
+  font-size: 5000px;
+
+}
+.img_buy{
+  background: #ffffff;
+  float: right;
+  width: 48%;
+  font-size: 5000px;
+
+}

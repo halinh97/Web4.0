@@ -1,0 +1,977 @@
+body{
+  background-color: #ffffff;
+}
+.menu-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: auto;
+  z-index: 9999;
+}
+
+.menu-container span{
+  color: #402E2A;
+  display: inline-block;
+  height: auto;
+  width: 100px;
+  line-height: 30px;
+  position: relative;
+  padding: 10px auto;
+  font-weight: bold;
+}
+
+.menu-container .site_logo img{
+  width: 50%;
+  background: transparent;
+  text-align: center;
+}
+.underline_menu {
+  position: relative;
+  height: 3px;
+  width: auto;
+  background: yellow;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: #FFD400;
+	transform: scale(1.2);
+}
+.navbar-default .navbar-nav>li:hover .underline_menu {
+  opacity: 1;
+}
+.video-container{
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow:hidden;
+  z-index: -100;
+}
+.video-info{
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.navbar-toggle .icon-bar{
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #ffffff;
+}
+
+.navbar-toggle .icon-bar + .icon-bar{
+  margin-top: 4px;
+}
+
+.navbar-default  {
+  position: absolute;
+	left: 0;
+	right: 0;
+	border: none;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #ffffff;
+  padding: 30px 30px;
+  font-size: 1.5em;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggle{
+  position: relative;
+  z-index: 99999;
+}
+
+.home-information-benefits .text h2{
+  line-height: 0.85em;
+  margin-bottom: 5px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  margin-top: 70px;
+}
+
+.home-information-benefits .text p{
+  line-height: 1.25em;
+  font-size: 1.8em;
+  display: block;
+  margin-left: 30px;
+}
+
+.home-information-benefits .btn{
+  margin-top: 20px;
+}
+
+.home-information-benefits .text a{
+  background-color: #ffffff;
+}
+.text .btn{
+  font-weight: 600;
+  padding: 3px 8px;
+  box-shadow: none;
+  color: #000000;
+  cursor: pointer;
+  text-align: center;
+  bottom: 0;
+}
+.home-information{
+  position: relative;
+  text-align: center;
+  padding: 65px 0 35px;
+  background: #cbcbcb url(/img/InformationBackground.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.home-information .home-information-benefits{
+  position: relative;
+  background-position: center right;
+  background-size: 30%;
+  max-width: 1400px;
+  height: 382px;
+  margin: auto;
+  background-color: #FFC319;
+  background-image: url(/img/InformationBenefitsBackground.jpg);
+  background-repeat: no-repeat;
+  background-clip: content-box;
+}
+
+.home-information .container-fluid{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 25px;
+  width: 100%;
+}
+
+.home-information .home-information-benefits .benefits ul{
+  position: absolute;
+  top: 120px;
+  padding: 5px 0 ;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.home-information .home-information-benefits .benefits ul li{
+  position: relative;
+  display: inline-block;
+  height: auto;
+  width: auto;
+}
+.home-information-benefits .benefits .list-unstyled img{
+  width: 75px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+div.pop-up {
+  display: none;
+  position: absolute;
+  width: 280px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 100%;
+  bottom: 80px;
+  left: -100px;
+}
+.pop-up h3{
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.slogan {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 220px;
+  font-size: 60px;
+  line-height: 3em;
+  font-family: 'Gloria Hallelujah', cursive;
+  text-shadow: 0 0 20px black;
+  text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 1225px){
+  .navbar-default .navbar-nav>li>a {
+  	color: #ffffff;
+    padding: 30px 20px;
+    font-size: 1.2em;
+  }
+  .home-information-benefits .benefits .list-unstyled img{
+    width: 70px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+@media (max-width: 1100px){
+  .home-information-benefits .benefits .list-unstyled img{
+    width: 60px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+@media (max-width: 970px){
+  .home-information-benefits .benefits .list-unstyled img{
+    width: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .home-information-benefits .text h2 {
+    line-height: 0.75em;
+    margin-bottom: 5px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-top: 70px;
+  }
+
+  .home-information-benefits .text p {
+    line-height: 1.1em;
+    font-size: 1.5em;
+    display: block;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 927px){
+  .navbar-default .navbar-nav>li>a {
+  	color: #ffffff;
+    padding: 30px 15px;
+    font-size: 1em;
+  }
+}
+@media (max-width: 868px){
+  .home-information-benefits .benefits .list-unstyled img{
+    width: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+@media (max-width: 768px){
+
+  .home-information .home-information-benefits .benefits ul{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    padding: 5px 0 ;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .slogan {
+    top: 140px;
+    font-size: 48px;
+  }
+
+  .menu-container{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: auto;
+    height: 150px;
+  }
+  .navbar-default  {
+    position: absolute;
+  	left: 0;
+  	right: 0;
+  	border: none;
+  	background: #000000;
+    height: 150px;
+  }
+  .menu-container .site_logo img{
+    width: 150px;
+    background: transparent;
+    text-align: center;
+    float: left;
+  }
+  .header-menu button {
+    position: absolute;
+    right: 10px;
+    top: 70px;
+    background: #ffffff;
+    border: none;
+  }
+  .nav.navbar-nav.navbar-collapse {
+    position: absolute;
+    right: 15px;
+    top: 140px;
+    width: 200px;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .navbar-default .nav.navbar-nav.navbar-collapse>li>a:hover {
+  	color: #FFD400;
+    transform: scale(1);
+  }
+  .video-container{
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow:hidden;
+    z-index: -100;
+  }
+  .video-info{
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
+@media (max-width: 469px){
+  .home-information-benefits .text h2 {
+    line-height: 0.75em;
+    margin-bottom: 5px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    margin-top: 60px;
+  }
+  .home-information-benefits .text p {
+    line-height: 1.1em;
+    font-size: 1.2em;
+    display: block;
+    margin-left: 30px;
+  }
+  .home-information .home-information-benefits .benefits ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5px 0 ;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 380px){
+  .home-information .home-information-benefits .benefits ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .home-information .home-information-benefits{
+    height: 400px;
+  }
+  .home-information-benefits .text h2 {
+    line-height: 1em;
+    margin-bottom: 5px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    margin-top: 50px;
+  }
+  .home-information-benefits .text p {
+    line-height: 1.2em;
+    font-size: 1em;
+    display: block;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 236px){
+  .home-information .home-information-benefits{
+    height: 470px;
+  }
+}
+@media (max-width: 189px){
+  .home-information .home-information-benefits{
+    height: 570px;
+  }
+}
+.home_container {
+  position: relative;
+  background: #ffffff;
+  text-align: center;
+  height: auto;
+}
+.home_container h3 {
+  padding: 5px 0;
+  line-height: 30px;
+  font-size: 25px;
+}
+.home_container span {
+  color: #FFD400;
+  font-weight: bold;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.home_container .text{
+  font-family: 'Gloria Hallelujah', cursive;
+}
+.home_container .item_home_container img {
+  width: 80%;
+}
+.home_container .item_home_container .text {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+.chat_button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: transparent;
+  border-radius: 100%;
+  border: none;
+}
+
+.chat_button:active,
+.chat_button:focus{
+  outline: 0 none;
+}
+.chat_button img {
+  width: 100px;
+  height: 100px;
+}
+
+.map_container {
+  position: relative;
+}
+.map_container .slogan_map {
+  padding: 50px 0px;
+  font-size: 3em;
+  text-align: center;
+  font-family: cursive;
+  color: #ffffff;
+  background: #82FA58;
+}
+.map_container .slogan_map span {
+  font-size: 1.2em;
+  color: #000000;
+}
+.map_container .over_map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.map_container .map iframe{
+  width: 100%;
+}
+
+
+.home-product{
+  position: relative;
+  background-position: center;
+  width: 100%;
+  margin: auto;
+  background-image: url(/img/RecipesBackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+}
+
+.home-product .title h2{
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 50px;
+}
+
+.home-product .title p{
+  font-size: 25px;
+}
+
+.home-product .home-product-info img{
+  width: 95%;
+  margin-left: 15px;
+  margin-top: 50px;
+  border: 20px solid #ffffff;
+}
+
+.homes-information{
+
+  position: relative;
+  text-align: center;
+  background:url(/img/InformationBackground.jpg);
+  background-size: cover;
+  height: 100%;
+
+}
+
+.homes-information .homes-information-benefits{
+
+  position: relative;
+  background-position: center right;
+  background-size: 100%;
+  max-width: 100%;
+  height: 100%;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.homes-information-benefits .text_buy h3 {
+  line-height: 1em;
+  margin-bottom: 5px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 3em;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+
+}
+
+.homes-information-benefits .text p {
+  line-height: 1.1em;
+  font-size: 1.5em;
+  display: block;
+  margin-left: 30px;
+}
+.row .benefit_container{
+  position: relative;
+  background-size: 100%;
+  max-width:45%;
+  max-height: 100%;
+  margin: auto;
+  background-image:  url(/img/home_buy.png);
+  border-radius: 10%;
+  margin-top: 40px;
+  padding: inherit;
+
+}
+
+
+@media (max-width: 600px){
+  .row .benefit_container{
+    position: relative;
+    background-size: 100%;
+    max-width:90%;
+    max-height: 100%;
+    margin: auto;
+    background-image:  url(/img/home_buy.png);
+    border-radius: 10%;
+    margin-top: 40px;
+    margin-left: 10px;
+
+  }
+  .homes-information-benefits .row .text{
+    margin-top: 30px;
+
+    margin-left: 50px;
+
+  }
+  .homes-information-benefits .text p {
+    position: fixed;
+  }
+
+}
+
+
+.profile_wrapper input[type=text]{
+  border-radius: 0;
+  padding-right: 23px;
+  background-color: #f5f5f5;
+  border: 2px solid #c49b2c;
+  border-radius: 2px;
+  line-height: 34px;
+  width: 100%;
+}
+.tel input[type=tel]{
+  border-radius: 0;
+  padding-right: 23px;
+  background-color: #f5f5f5;
+  border: 2px solid #c49b2c;
+   line-height: 32px;
+   width: 100%;
+}
+.profile_group .tel{
+  margin-top: 11px;
+
+}
+
+.adress input[type=adress]{
+  border-radius: 0;
+  padding-right: 23px;
+  background-color: #f5f5f5;
+  border: 2px solid #c49b2c;
+  line-height: 32px;
+  width: 100%;
+}
+.profile_group .adress{
+  margin-top: 11px;
+
+}
+
+.profile_group .message textarea{
+  background-color: #f5f5f5;
+  border: 2px solid #c49b2c;
+  line-height: 20px;
+  width: 100%;
+}
+.profile_group .message{
+  margin-top: 20px;
+
+}
+h5 {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-family: "Roboto Slab", Arial, Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+.homes-information-benefits .text h2 {
+  line-height: 1.5em;
+  margin-bottom: 5px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 4em;
+  text-transform: uppercase;
+  margin-top: 50px;
+
+}
+.homes-information-benefits .text p {
+  line-height: 1.5em;
+  font-size: 2.5em;
+  display: block;
+  margin-left: 30px;
+  font-family: 'Gloria Hallelujah', cursive;
+
+}
+.profile_group button{
+  background: #000000;
+  margin-top: 15px;
+  width: 150px;
+  height: 50px;
+  border-radius: 15%;
+  background-image: url(/img/button.png);
+  background-position:top;
+
+
+}
+.profile_group a{
+  color: #ffffff;
+}
+
+.home_end {
+  background: #e8a600;
+  background-image: url(/img/home_end_2.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100%;
+}
+.home_end .row a{
+  font-size: 50px;
+  margin-top: 30px;
+  color: #000000;
+}
+
+.shop_sales_section {
+  padding: 15px 0px;
+}
+.shop_sales_section .col-md-3.col-xs-6 {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.banner_container {
+  padding: 0px 2px;
+  margin-bottom: 0px;
+}
+.banner_container>*{
+  display: inline;
+  text-align: center;
+}
+.shop_sales_section .banner_element {
+  font-size: 15px;
+  padding: 12px;
+  line-height: 1em;
+  color: #000000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .2s;
+  background: rgb(205,214,218);
+}
+.shop_sales_section .banner_element:hover {
+  color: rgb(255,255,255);
+  background: rgb(89,109,120);
+  text-decoration: none;
+}
+
+.shop_sales_section .image_container {
+  position: relative;
+  overflow: hidden;
+  margin-top: 4px;
+}
+.shop_sales_section img {
+  width: 100%;
+  transition:all .4s linear;
+}
+.shop_sales_section .image_container .overlay_on_shop_list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.shop_sales_section .image_container:hover img {
+  transform: scale(1.2);
+}
+.shop_sales_section .image_container .overlay_on_shop_list h3{
+  position: absolute;
+  font-family: 'Gloria Hallelujah', cursive;
+  text-shadow: 0 0 20px black;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-100%);
+  font-size: 40px;
+}
+.shop_sales_section .image_container .overlay_on_shop_list .statistic_container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.image_container .trigger_of_pop_up {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+}
+
+#list_shop .item {
+  position: relative;
+}
+.pop_up_on_shop_list {
+  position: absolute;
+  top: 0;
+  /*bottom: 0;*/
+  width: auto;
+  height: inherit;
+  transform: translateX(100%);
+  background: rgba(205,214,218,0.95);
+  display: block;
+  margin-top: 4px;
+  color: #000000;
+  z-index: 2;
+  display: none;
+  word-wrap: break-word;
+}
+.pop_up_on_shop_list img {
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0px 10px 5px 5px;
+}
+.pop_up_on_shop_list h3 {
+  font-weight: bold;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+.pop_up_on_shop_list>p {
+  padding: 0px 10px;
+}
+
+
+#list_sales {
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+}
+
+#list_sales>.item {
+  position: absolute;
+}
+#list_sales .item_container {
+  height: 100px;
+  width: 200px;
+  background: red;
+}
+.homes-information{
+
+  position: relative;
+  text-align: center;
+  background:url(/img/InformationBackground.jpg);
+  background-size: cover;
+  height: 100%;
+
+}
+
+.homes-information .homes-information-benefits{
+
+  position: relative;
+  background-position: center right;
+  background-size: 100%;
+  max-width: 100%;
+  height: 100%;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.homes-information-benefits .text_buy h3 {
+  line-height: 1em;
+  margin-bottom: 5px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 3em;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+
+}
+
+.homes-information-benefits .text p {
+  line-height: 1.1em;
+  font-size: 1.5em;
+  display: block;
+  margin-left: 30px;
+}
+.row .benefit_container{
+  position: relative;
+  background-size: 100%;
+  max-width:45%;
+  max-height: 100%;
+  margin: auto;
+  background-image:  url(/img/home_buy.png);
+  border-radius: 10%;
+  margin-top: 40px;
+  padding: inherit;
+
+}
+
+
+@media (max-width: 600px){
+  .row .benefit_container{
+    position: relative;
+    background-size: 100%;
+    max-width:90%;
+    max-height: 100%;
+    margin: auto;
+    background-image:  url(/img/home_buy.png);
+    border-radius: 10%;
+    margin-top: 40px;
+    margin-left: 10px;
+
+  }
+  .homes-information-benefits .row .text{
+    margin-top: 30px;
+
+    margin-left: 50px;
+
+  }
+  .homes-information-benefits .text p {
+    position: fixed;
+  }
+
+}
+
+
+.profile_wrapper input[type=text]{
+  border-radius: 0;
+  padding-right: 23px;
+  background-color: #f5f5f5;
+  border: 2px solid #c49b2c;
+  border-radius: 2px;
+  line-height: 34px;
+  width: 100%;
+}
+.tel input[type=tel]{
+  border-radius: 0;
+  padding-right: 23px;
+  background-color: #f5f5f5;
+  border: 2px solid #c49b2c;
+   line-height: 32px;
+   width: 100%;
+}
+.profile_group .tel{
+  margin-top: 11px;
+
+}
+
+.adress input[type=adress]{
+  border-radius: 0;
+  padding-right: 23px;
+  background-color: #f5f5f5;
+  border: 2px solid #c49b2c;
+  line-height: 32px;
+  width: 100%;
+}
+.profile_group .adress{
+  margin-top: 11px;
+
+}
+
+.profile_group .message textarea{
+  background-color: #f5f5f5;
+  border: 2px solid #c49b2c;
+  line-height: 20px;
+  width: 100%;
+}
+.profile_group .message{
+  margin-top: 20px;
+
+}
+h5 {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-family: "Roboto Slab", Arial, Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+.homes-information-benefits .text h2 {
+  line-height: 1.5em;
+  margin-bottom: 5px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 4em;
+  text-transform: uppercase;
+  margin-top: 50px;
+
+}
+.homes-information-benefits .text p {
+  line-height: 1.5em;
+  font-size: 2.5em;
+  display: block;
+  margin-left: 30px;
+  font-family: 'Gloria Hallelujah', cursive;
+
+}
+.profile_group button{
+  background: #000000;
+  margin-top: 15px;
+  width: 150px;
+  height: 50px;
+  border-radius: 15%;
+  background-image: url(/img/button.png);
+  background-position:top;
+
+
+}
+.profile_group a{
+  color: #ffffff;
+}
+
+.home_end {
+  background: #e8a600;
+  background-image: url(/img/home_end_2.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100%;
+}
+.home_end .row a{
+  font-size: 50px;
+  margin-top: 30px;
+  color: #000000;
+}

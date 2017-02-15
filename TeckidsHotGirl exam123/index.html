@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script type="text/javascript" src="libs/bootstrap/js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="libs/jquery-ui.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+
+
+    <script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="libs/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="libs/bootstrap/js/handlebars-v4.0.5.js"></script>
+    <script type="text/javascript" src="libs/bootstrap/js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="libs/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+      $( function() {
+        function left( element, using ) {
+          element.position({
+            my: "right middle",
+            at: "left middle",
+            of: "#list_sales",
+            collision: "none",
+            using: using
+          });
+        }
+        function right( element, using ) {
+          element.position({
+            my: "left middle",
+            at: "right middle",
+            of: "#list_sales",
+            collision: "none",
+            using: using
+          });
+        }
+        function center( element, using ) {
+          element.position({
+            my: "center middle",
+            at: "center middle",
+            of: "#list_sales",
+            using: using
+          });
+        }
+        function animate( to ) {
+          $( this ).stop( true, false ).animate( to );
+        }
+        left( $( "#list_sales div.item:eq(0)" ), animate );
+        center( $( "#list_sales div.item:eq(1)" ), animate );
+        right( $( "#list_sales div.item:gt(1)" ), animate );
+        function next( event ) {
+          event.preventDefault();
+          center( $( "#list_sales div.item:eq(2)" ), animate );
+          left( $( "#list_sales div.item:eq(1)" ), animate );
+          right( $( "#list_sales div.item:eq(0)" ).appendTo( "#list_sales" ) );
+        }
+        function previous( event ) {
+          event.preventDefault();
+          center( $( "#list_sales div.item:eq(0)" ), animate );
+          right( $( "#list_sales div.item:eq(1)" ), animate );
+          left( $( "#list_sales div.item:last" ).prependTo( "#list_sales" ) );
+        }
+        $( "#previous" ).on( "click", previous );
+        $( "#next" ).on( "click", next );
+        $( "#list_sales div.item" ).on( "click", function( event ) {
+          $( "#list_sales div.item" ).index( this ) === 0 ? previous( event ) : next( event );
+        });
+        $( window ).on( "resize", function() {
+          left( $( "#list_sales div.item:eq(0)" ), animate );
+          center( $( "#list_sales div.item:eq(1)" ), animate );
+          right( $( "#list_sales div.item:eq(2)" ), animate );
+        });
+      } );
+    </script>
+
+    <title></title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row banner">
+
+          <div class="menu-container">
+            <div class="col-sm-12 navbar-menu" id="id-navbar-menu">
+              <nav class="navbar navbar-default">
+                <div>
+                  <h1>
+                    <div class="col-sm-3 text-center site_logo">
+                      <img src="img/logo3.png" alt="Chuoi xanh logo"/>
+                    </div>
+                  </h1>
+                </div>
+
+                <!--make menu small-->
+                <div class="header-menu">
+                  <div class="menu-small">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  </div>
+                </div>
+                <!--MENU+LOGO-->
+                <ul class="nav navbar-nav navbar-collapse collapse" id="navbar-collapse">
+                  <li>
+                    <a href="#home_campaign">Home</a>
+                    <div class="underline_menu"></div>
+                  </li>
+                  <li>
+                    <a href="#">Order</a>
+                    <div class="underline_menu"></div>
+                  </li>
+                  <li>
+                    <a href="#">Shop</a>
+                    <div class="underline_menu"></div>
+                  </li>
+                  <li>
+                    <a href="#">HOT products</a>
+                    <div class="underline_menu"></div>
+                  </li>
+                  <li>
+                    <a href="#">Promotions</a>
+                    <div class="underline_menu"></div>
+                  </li>
+                  <li>
+                    <a href="#">About us</a>
+                    <div class="underline_menu"></div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- make video to background -->
+    <section class="video_section">
+      <div class="video-container">
+        <video loop muted autoplay class="video-info">
+          <source src="img/Banner.webm" type="video/webm">
+          <source src="img/Banner.mp4" type="video/mp4">
+            Chuoixanh.com
+        </video>
+        <div class="slogan">Em chỉ là bé bán chuối !!!</div>
+      </div>
+    </section>
+
+    <section class="home_container container-fluid" id="home_campaign">
+      <h3>
+        "QUALITY PRODUCTS INTERNATIONAL STANDARDS EXCEED - FIRST APPEARS"
+        <br>
+        Let my products make your life<span>"PERFECT"</span>
+        <br>
+        <p>"With us you will have:"</p>
+      </h3>
+      <div class="row">
+        <div class="col-sm-4 col-xs-12 item_home_container">
+          <img src="img/31.jpg">
+          <div class="text">
+            Convenience products,
+            <br>
+            easy to use
+            <br>
+            for each person
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-xs-12 item_home_container">
+          <img src="img/CampaignRide.jpg">
+          <div class="text">
+            <br>
+            Always with you no matter where you are.
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-xs-12 item_home_container">
+          <img src="img/hulk.jpg">
+          <div class="text">
+            <br>
+            Helping your life healthier,
+            <br>
+            full of energy.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-information">
+      <div class="home-information-benefits container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <div class="text">
+              <h2>
+                BANANAS ARE A NUTRITIOUS FOOD
+              </h2>
+              <p>"Bananas are bursting with long-lasting energy and have loads of health benefits."
+              </p>
+              <a href="#" class="btn btn-white">Learn more</a>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 benefits_container">
+            <div class="benefits">
+              <ul class="list-unstyled">
+                <li>
+                  <img class="trigger" src="img/items-healthy/BenefitsPotassium.png" alt="Potassium" />
+                  <div class="pop-up">
+                    <h3 class="title">Potassium</h3>
+                    <p>
+                      Restore tired muscles and boost bored brains
+                    </p>
+                  </div>
+                </li>
+      					<li>
+                  <img class="trigger" src="img/items-healthy/BenefitsVitB6.png" alt="Vit B6" />
+                  <div class="pop-up">
+                    <h3 class="title">Vit B6</h3>
+                    <p>
+                      15% of your daily B6 needs for nerve function
+                    </p>
+                  </div>
+                </li>
+      					<li>
+                  <img class="trigger" src="img/items-healthy/BenefitsLowGI.png" alt="Low GI" />
+                  <div class="pop-up">
+                    <h3 class="title">Low GI</h3>
+                    <p>
+                      With a low GI of 52, they're great for lasting energy
+                    </p>
+                  </div>
+                </li>
+      					<li>
+                  <img class="trigger" src="img/items-healthy/BenefitsFolate.png" alt="Folate" />
+                  <div class="pop-up">
+                    <h3 class="title">Folate</h3>
+                    <p>
+                      A great source of folate for pregnancy
+                    </p>
+                  </div>
+                </li>
+      					<li>
+                  <img class="trigger" src="img/items-healthy/BenefitsAntioxidants.png" alt="Antioxidants" />
+                  <div class="pop-up">
+                    <h3 class="title">Antioxidants</h3>
+                    <p>
+                      For overall health and a lower risk of age-related disease
+                    </p>
+                  </div>
+                </li>
+      					<li>
+                  <img class="trigger" src="img/items-healthy/BenefitsFibre.png" alt="Fibre" />
+                  <div class="pop-up">
+                    <h3 class="title">Fibre</h3>
+                    <p>
+                      Keeps you regular and avoid constipation
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-product">
+      <div class="container-fluid">
+        <div class="title text-center">
+          <h2>The recipe from bananas</h2>
+          <p>Bananas are a highly nutritious food, providing health for users</p>
+        </div>
+        <div class="row home-product-info text-center">
+          <div class="item-overlay">
+            <div class="col-xs-12 col-sm-4">
+              <div class="title">Banana and Coconut Milk Pops</div>
+              <img src="img/items-product/6.jpg" alt="banana salad">
+              <!-- <div class="overlay">
+                <a href="#" class="btn btn-white">Select it</a>
+              </div> -->
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <div class="title">Banana and Coconut Milk Pops</div>
+              <img alt="Banana and Coconut Milk Pops" src="img/items-product/21.jpg" />
+              <!-- <div class="overlay">
+                <a href="#" class="btn btn-white">Select it</a>
+              </div> -->
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <div class="title">Banana and Coconut Milk Pops</div>
+              <img src="img/items-product/1.jpg" alt="banana cream">
+              <!-- <div class="overlay">
+                <a href="#" class="btn btn-white">Select it</a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop_sales_section">
+      <div class="container" id="tab-list">
+        <ul class="row banner_container">
+          <li>
+            <a class="col-md-3 col-xs-6 banner_element" href="#list_shop">Shop list</a>
+          </li>
+          <li>
+            <a class="col-md-3 col-xs-6 banner_element" href="#list_sales">Khuyến mãi</a>
+          </li>
+        </ul>
+
+        <div id="list_sales">
+          <div class="item">
+            <div class="item_container" data-item-id="{{id}}">
+              aaaaaaaaaaaaa
+            </div>
+
+          </div>
+
+          <div class="item">
+            <div class="item_container" data-item-id="{{id}}">
+              bbbbbbbbbbbbbbbbbbbbb
+            </div>
+
+          </div>
+
+          <div class="item">
+            <div class="item_container" data-item-id="{{id}}">
+              cccccccccccccccccc
+            </div>
+
+          </div>
+          <div class="item">
+            <div class="item_container" data-item-id="{{id}}">
+              ddddddddddddddddddddd
+            </div>
+
+          </div>
+
+          <a id="previous" href="#">Previous</a>
+          <a id="next" href="#">Next</a>
+        </div>
+
+        <div id="list_shop" class="row">
+        </div>
+      </div>
+    </section>
+
+    <script id="list_shop_template" type="text/x-handlebars-template">
+      {{#each items}}
+        <div class="item">
+          <div class="col-md-3 col-xs-6 item_container">
+            <div class="image_container">
+              <img src="{{imageUrl}}">
+              <div class="overlay_on_shop_list">
+                <h3>{{Name}}</h3>
+                <div class="row text-center statistic_container">
+                  <div class="col-xs-4">
+                    <span class="glyphicon glyphicon-eye-open"></span>
+                    <p>{{view}}</p>
+                  </div>
+                  <div class="col-xs-4">
+                    <span class="glyphicon glyphicon-thumbs-up"></span>
+                    <p>{{like}}</p>
+                  </div>
+                  <div class="col-xs-4">
+                    <span class="glyphicon glyphicon-thumbs-down"></span>
+                    <p>{{dislike}}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="trigger_of_pop_up" data-item-id="{{id}}"></div>
+            </div>
+
+            <div class="pop_up_on_shop_list">
+              <div class="shop_info">
+                <img src="{{Avatar}}" class="avatar">
+                <h3>{{Name}}</h3>
+                <p class="text_muted">{{Title}}</p>
+              </div>
+              <hr>
+              <p>{{content}}</p>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </script>
+
+    <script id="list_sales_template" type="text/x-handlebars-template">
+      {{#each items}}
+
+      {{/each}}
+    </script>
+<!-- Modal of shop list -->
+    <div class="modal fade" id="item_modal" tabindex="-1" role="dialog" aria-labelledby="item_modal_label">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body" id="accordion">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script id="item-modal-template" type="text/x-handlebars-template">
+      {{#each prods}}
+
+        <div class="prod_banner">
+          <img src="{{imageUrl}}">
+          <h2>{{Name}}</h2>
+          <p>{{Title}}</p>
+        </div>
+        <div class="prod_container">
+          <p>{{content}}</p>
+          <div>
+            <span class="glyphicon glyphicon-briefcase"></span>
+            <p>{{inventory}}</p>
+          </div>
+          <div>
+            <span class="glyphicon glyphicon-usd"></span>
+            <p>{{price}}</p>
+          </div>
+          <button>Add to cart</button>
+        </div>
+
+
+      {{/each}}
+    </script>
+
+    <!-- <section class="map_container">
+      <div class="slogan_map">
+        <span>Em bán chuối ở hàng trăm chợ, 3 tháng mới quay lại 1 lần</span>
+        <br>
+        Lúc đến - lúc đi, Gặp thì nên MUA LUÔN - Vừa dùng, vừa để dành!
+      </div>
+      <div class="map">
+        <iframe class="gg_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7204050415703!2d105.826928117508!3d21.00384192661793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac8087e445af%3A0x2b8a31969e88b9df!2zTmjDoCBow6BuZyBW4bqhbiBM4buZYw!5e0!3m2!1svi!2s!4v1484387021211" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+        </iframe>
+      </div>
+      <div class="over_map">
+      </div>
+    </section> -->
+
+    <section class="homes-information">
+      <div class="homes-information-benefits container-fluid">
+        <div class="row">
+          <div class="col-xs-6 col-sm-6">
+            <div class="text">
+              <h2>
+                COME WITH US NOW!
+              </h2>
+              <p>"The special bananas awaits you own it ! Let bananas implement your dreams!"
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 benefit_container">
+            <div class="buy_container text-center">
+              <div class="text_buy text-center">
+                <h3>
+
+                WELCOME TO US!
+                </h3>
+                <h5>
+                "Sign up to receive the worst banana!"
+                </h5>
+              </div>
+
+            <div class="col-sm-12 profile_group">
+              <div class="profile_wrapper">
+                 <input type="text" name="text" value="" size="65" class="name" aria-required="true" aria-invalid="false" placeholder="First Name (Request):">
+              </div>
+             <div class=" tel">
+              <input type="tel" name="tel" value="" size="65" class="tel"  placeholder="Phone number (Request):">
+             </div>
+             <div class="adress">
+              <input type="adress" name="adress" value="" size="65" class="adress"  placeholder="Address (Request):">
+             </div>
+             <div class="message">
+              <textarea name="your-message" size="100" rows="4" >Chọn mua (the type, quantity and other requirements):</textarea>
+             </div>
+             <button type="button"  class="plus_button">
+               <a class="buy now">BUY  NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="home_end ">
+    <div class="row text-center">
+      <div class=" footer-section-1">
+      <a href="http://www.facebook.com" target="_blank">CHUỐI XANH .COM</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="row end_1 text-center">
+    <div class="footer-section-2 ">
+      <a href="#" target="_blank">Điều kiện và Điều khoản</a>
+      "
+      ||
+      "
+      <a href="#" target="_blank">Chính sách và pháp luật</a>
+      "
+      ||
+      "
+      <a href="#" target="_blank">Đãi Ngộ</a>
+      "
+      ||
+      "
+      <a href="#" target="_blank">Hướng dẫn mua sản phẩm</a>
+    </div>
+    <p>--------------------------------------------------</p>
+  </div>
+
+    <!-- button box-chat -->
+    <!-- <button type="button" class="chat_button" data-item-id="chat_modal">
+      <img src="img/icon-chat.png">
+    </button> -->
+
+    <!-- <div class="modal fade" id="chat_modal" tabindex="-1" role="dialog" aria-labelledby="item_modal_label">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body" id="item_modal_body">
+            <div class="image_chat">
+              <img src="img/Speech_bubble.png">
+            </div>
+            <div class="container">
+              <p id="datestamp"></p>
+              <form class="col-sm-3 search-form">
+                <input type="text" name="s" placeholder="Enter your chat ..." class="form-control">
+                  <img src="img/Speech_bubble.png">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  </body>
+</html>
