@@ -73,6 +73,6 @@ function requestNextPage(itemTemplate){
     console.log(error);
   }).always(function(){
     isRequestingNextPage = false;
-
+  $('.page_loading').hide();
   });
 }
